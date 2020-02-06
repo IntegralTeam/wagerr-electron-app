@@ -47,7 +47,10 @@
               Cancel
             </a>
             <a
-              @click="unlockAnonymizeOnly = true; handleSubmit();"
+              @click="
+                unlockAnonymizeOnly = true;
+                handleSubmit();
+              "
               class="waves-effect waves-light btn blue"
             >
               Unlock for Staking Only

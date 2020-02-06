@@ -28,9 +28,10 @@
 
 <script>
 import Vuex from 'vuex';
+
 import TopNavBar from '@/components/TopNavBar.vue';
-import SplashScreen from '@/components/splashscreen/SplashScreen';
-import DebugInput from '@/components/rpc/DebugInput';
+import SplashScreen from '@/components/splashscreen/SplashScreen.vue';
+import DebugInput from '@/components/rpc/DebugInput.vue';
 
 export default {
   name: 'App',

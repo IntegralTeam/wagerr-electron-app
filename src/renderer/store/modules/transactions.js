@@ -71,7 +71,7 @@ const actions = {
           const transaction = await walletRPC.getTransaction(
             transactionRec.transactionid
           );
-          const merged = Object.assign({}, transactionRec, transaction);
+          const merged = { ...transactionRec, ...transaction };
 
           updatedTxList.push(merged);
         }
