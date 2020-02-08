@@ -36,6 +36,22 @@
     "promise/param-names": "error",
     "promise/always-return": "error",
     "promise/catch-or-return": "error",
-    "promise/no-native": "off"
+    "promise/no-native": "off",
+    "no-param-reassign": ["error", {
+      "props": true,
+      "ignorePropertyModificationsFor": [
+        "state", // for vuex state
+        "acc", // for reduce accumulators
+        "accumulator", // for reduce accumulators
+        "e", // for e.returnvalue
+        "ctx", // for Koa routing
+        "req", // for Express requests
+        "request", // for Express requests
+        "res", // for Express responses
+        "response", // for Express responses
+        "$scope", // for Angular 1 scopes
+        "staticContext" // for ReactRouter context
+      ]
+    }]
   }
 }
